@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Кarkach Olha</h1>
+        <p>
+            <a href="karkacholua@gmail.com"> Email</a> |
+            <a href="https://www.linkedin.com/in/example"> LinkedIn</a> |
+            <a href="tel:+380934115378"> Телефон</a>
+        </p>
+    </header>
+    
+    <section>
+        <h2>About Me
+        </h2>
+    </h2>
+        <p> My primary goals include acquiring new skills, achieving professional development, and contributing to the success of my team. I am committed to continuous self-improvement and always eager to embrace new challenges.</p>
+     
+            
+            Communication Skills: I excel at building relationships and finding common ground with others, which enables me to work effectively in teams and establish productive connections with clients.
+        <p>Adaptability: I quickly adjust to new environments and am open to learning new technologies and methodologies. </p>
+    <p> Analytical Thinking: My ability to analyze information and make informed decisions allows me to find optimal solutions in complex situations.</p>
+        <p>Work Experience:
+            I have experience in web developer. This opportunity allowed me to develop my professional skills and understand the importance of teamwork and effective time management.
+            
+            I am also actively seeking opportunities for learning and professional development to stay updated on current trends and best practices in my field.
+            
+            </p>
+    </section>
+    <section>
+        <h2>Skills and Proficiency:
+        </h2>
+        <ul>
+            <li>HTML5, CSS3 preprocessors
+            </li>
+            <li>Web Design
+                Material-UI</li>
+            <li>Bootstrap 3</li>
+            <li>Git GIThub</li>
+            <li>JavaScript Basics</li>
+
+        </ul>
+    </section>
+
+    <section>
+        <h2>Code Examples
+        </h2>
+        <h3>CODEWARS Challenge "Variations in an Array" .</h3>
+
+            <h3>
+            <em><p> Challenge
+            Write a function that takes an array of numbers and returns a new array containing all possible combinations obtained by increasing each number by 1, and also leaving it unchanged.</em></p></h3>
+        <pre class="highlight"><code>function variations(arr) {
+            const results = [];
+            
+            // Helper function to generate variations
+            function generate(current, index) {
+                if (index === arr.length) {
+                    results.push(current);
+                    return;
+                }
+                
+                // Take the current number as is
+                generate([...current, arr[index]], index + 1);
+                
+                // Take the current number + 1
+                generate([...current, arr[index] + 1], index + 1);
+            }
+            
+            generate([], 0);
+            return results;
+        }
+        const input = [1, 2];
+        const output = variations(input);
+        console.log(output);
+          </code></pre>
+        
+    </section>
+
+    <section>
+        <h2>E X P E R I E N C E</h2>
+        <h3>UI/UX DESIGNER</h3>
+        <p><strong>ADVER Media Company
+        </strong><br><em>2019 – 2021</em></p>
+        <ul>
+            <li>Developed UI / UX design for websites, web and mobile
+                applications</li>
+                <li>  Developed the design and functionality of SaaS solutions,
+                platforms and technological services</li>
+            <li>Created design systems in Figma
+            </li>
+        </ul>
+
+        <h3>WEB DEVELOPER (JUNIOR)</h3>
+        <p><strong>WEBXLOO Company
+        </strong><br><em>2021 – 2022</em></p>
+        <ul>
+            <li>Development of modules for cms (Opencart, Wordpress)
+            </li>
+            <li>Website development and SEO optimization
+            </li>
+        <li>Analysis of the technical condition of websites in order to
+identify problems and potential vulnerabilities</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <h3>National Academy named after Oles Gonchar
+        </h3>
+        <p><strong>Informatics and computer technology</strong><br><em>2014</em></p>
+
+        <h3>WORLD ORT Informatics
+        </h3>
+        <p><strong>Web programming/ Web technologies</strong><br><em>2017</em></p>
+    </section>
+
+    
+
+    <section>
+        <h2>Languages
+        </h2>
+        <ul>
+            <li>Russian - C2</li>
+                <li>English - A2   </li>
+            <li>French - A2
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
